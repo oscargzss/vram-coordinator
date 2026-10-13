@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "vram-coordinator"
+abstract: >-
+  GPU memory reservations for concurrent local-LLM workloads on AMD hardware.
+  The coordinator keeps a cumulative budget, shares one model instance between
+  callers by reference counting, evicts idle models and closes them, watches the
+  device for operations that stop making progress, and measures usage with
+  lock-free sysfs attributes only, unless the operator enables the contended
+  path explicitly.
+authors:
+  - name: "oscargzss"
+repository-code: "https://github.com/oscargzss/vram-coordinator"
+url: "https://github.com/oscargzss/vram-coordinator"
+license: MIT
+version: "0.1.0"
+date-released: "2026-10-12"
+keywords:
+  - amdgpu
+  - vram
+  - llama-cpp
+  - gguf
+  - gpu-memory
+  - llm
+  - python
